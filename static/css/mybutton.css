@@ -1,12 +1,11 @@
 /*register now*/
-@import url('http://fonts.cdnfonts.com/css/bridge');
 
 #testbutton {
     width: 150px;
     height: 40px;
     border-radius:180px;
     position:relative;
-    font-family: 'Bridge', sans-serif;
+    
     background: rgb(189, 10, 114);
     cursor:pointer;
     line-height:12px;
@@ -74,7 +73,7 @@
     height: 40px;
     border-radius:180px;
     position:relative;
-    font-family: 'Bridge', sans-serif;
+    
     background: rgb(10, 117, 189);
     cursor:pointer;
     line-height:12px;
@@ -149,7 +148,7 @@
     background: rgb(40, 189, 10);
     cursor:pointer;
     line-height:12px;
-    font-family: 'Bridge', sans-serif;
+    
   }
   
   #testbutton3:before {
@@ -225,7 +224,7 @@
   background: rgb(192, 24, 184);
   cursor:pointer;
   line-height:12px;
-  font-family: 'Bridge', sans-serif;
+  
 }
 
 #testbuttoninsta:before {
@@ -316,7 +315,7 @@
   background: rgb(10, 168, 189);
   cursor:pointer;
   line-height:12px;
-  font-family: 'Bridge', sans-serif;
+  
 }
 
 #testbuttonlinkedin:before {
@@ -400,7 +399,7 @@
   background: rgb(41, 53, 223);
   cursor:pointer;
   line-height:12px;
-  font-family: 'Bridge', sans-serif;
+  
 }
 
 #testbuttonfb:before {
@@ -474,7 +473,7 @@
     height: 40px;
     border-radius:180px;
     position:relative;
-    font-family: 'Bridge', sans-serif;
+    
     background: rgb(133, 6, 150);
     cursor:pointer;
     line-height:12px;
@@ -546,7 +545,7 @@
     height: 40px;
     border-radius:180px;
     position:relative;
-    font-family: 'Bridge', sans-serif;
+    
     background: rgb(194, 2, 114);
     cursor:pointer;
     line-height:12px;
@@ -617,7 +616,7 @@
     height: 40px;
     border-radius:180px;
     position:relative;
-    font-family: 'Bridge', sans-serif;
+    
     background: rgb(3, 167, 189);
     cursor:pointer;
     line-height:12px;
@@ -691,7 +690,7 @@
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-    font-family: 'Bridge', sans-serif;
+    
   }
   
   #myBtn:hover {

@@ -6,7 +6,7 @@
     display: grid;
     
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 @media (max-width: 700px) {
@@ -16,8 +16,8 @@
 }
 
 .wrapperp .boxp {
-    width: 350px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
     margin: 0 auto;
     position: relative;
     perspective: 1000px;

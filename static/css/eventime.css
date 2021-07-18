@@ -84,13 +84,15 @@
 
 /* The actual content */
 .contentl {
-  padding: 20px 30px;
-  background-color: white;
+  
+  background-color: rgba(255, 255, 255, 0);
   border: solid;
   border-width: 5px;
-  border-color: rgb(218, 3, 146);
+  border-color: rgba(0, 0, 0, 0);
   position: relative;
+  text-align: center;
   border-radius: 6px;
+  font-size: larger;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
