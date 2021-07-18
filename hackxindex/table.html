@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Table</h2>
+<h4 class="text-center"><em>Total: {{studentdata|length}}</em></h4>
+<table>
+    <thead>
+        <tr class="info">
+          <th>First Name</th>
+          <th>Last Name</th>
+         <th>email</th>
+         <th>college</th>
+         <th>year</th>
+         <th> stream</th>
+         <th>domain</th>
+          <th>Phone Number</th>
+          <th>teamnum</th>
+          <th>teamname</th>
+          <th>teammemname1</th>
+          <th>teammememail1</th>
+          <th>teammemname2</th>
+          <th>teammememail2</th>
+          <th>teammemname3</th>
+          <th>teammememail3</th>
+          <th>teammemname4</th>
+          <th>teammememail4</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for data in studentdata %}
+        <tr>
+            <td>{{data.firstname}}</td>
+            <td>{{data.lastname}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.phone}}</td>
+            <td>{{data.college}}</td>
+            <td>{{data.year}}</td>
+            <td>{{data.stream}}</td>
+            <td>{{data.domain}}</td>
+            <td>{{data.teamnum}}</td>
+            <td>{{data.teamname}}</td>
+            <td>{{data.teammemname1}}</td>
+            <td>{{data.teammememail1}}</td>
+            <td>{{data.teammemname2}}</td>
+            <td>{{data.teammememail2}}</td>
+            <td>{{data.teammemname3}}</td>
+            <td>{{data.teammememail3}}</td>
+            <td>{{data.teammemname4}}</td>
+            <td>{{data.teammememail4}}</td>
+            
+            
+        </tr>
+    {% endfor%}
+      </tbody>
+</table>
+
+</body>
+</html>

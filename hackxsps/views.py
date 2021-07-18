@@ -32,15 +32,33 @@ def registration(request):
         teammememail4=request.POST['teammememail3']
         
 
+
+        studentdata = StudentReg(firstname=firstname, lastname=lastname, email=email, phone=phone, college=college, year=year, stream=stream,domain=domain, teamnum=teamnum, teamname=teamname, teammemname1=teammemname1, teammememail1=teammememail1, teammemname2=teammemname2, teammememail2=teammememail2, teammemname3=teammemname3, teammememail3=teammememail3,teammemname4=teammemname4, teammememail4=teammememail4)  
+
+        studentdata.save()
+        res = "Dear {} Thanks for your registration".format(firstname)
+        return render(request,"registration.html",{"status":res,"Registered":studentdata})
+        
+        
+    return render(request,"foodsordernow.html",{"Registered":studentdata})
+
+
+
+
+
+
+
+
+
+"""
         print(firstname, lastname, email, phone, college, year, stream, domain, teamnum, teamname, teammemname1,teammememail1, teammemname2, teammememail2, teammemname3, teammememail3,teammemname4,teammememail4)
 
         ins = Registration(firstname=firstname, lastname=lastname, email=email, phone=phone, college=college, year=year, stream=stream,domain=domain, teamnum=teamnum, teamname=teamname, teammemname1=teammemname1, teammememail1=teammememail1, teammemname2=teammemname2, teammememail2=teammememail2, teammemname3=teammemname3, teammememail3=teammememail3,teammemname4=teammemname4, teammememail4=teammememail4)  
 
         ins.save()
-        print("Data stored in db")
+        print("Data stored in db")"""
         
-    #return HttpResponse("This is my blogs page")
-    return render(request, 'registration.html')
+   
 
 
 def submitted(request):
@@ -59,3 +77,7 @@ def projects(request):
 
 
 
+def table(request):
+    studentdata = StudentReg.objects.all()
+    
+    return render(request,"table.html",{"studentdata":studentdata})
