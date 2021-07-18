@@ -61,10 +61,6 @@ def registration(request):
         
    
 
-
-def submitted(request):
-    #return HttpResponse("This is my projects page")
-    return render(request, 'submitted.html')
 def submission(request):
     #return HttpResponse("This is my projects page")
     return render(request, 'submission.html')
