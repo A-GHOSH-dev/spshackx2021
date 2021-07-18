@@ -41,7 +41,7 @@ def registration(request):
         return render(request,"registration.html",{"status":res,"Registered":regstudentdata})
         
         
-    return render(request,"foodsordernow.html",{"Registered":regstudentdata})
+    return render(request,"registration.html",{"Registered":regstudentdata})
 
 
 
