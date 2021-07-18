@@ -11,19 +11,15 @@ def registration(request):
         firstname=request.POST['firstname']
         lastname=request.POST['lastname']        
         email=request.POST['email']
-        country=request.POST['country']
-        state=request.POST['state']
-        city=request.POST['city']
-        address=request.POST['address']
-        pin=request.POST['pin']
+        
         phone=request.POST['phone']
         
-        whatsapp=request.POST['whatsapp']
+        
         
         college=request.POST['college']
         year=request.POST['year']
         stream=request.POST['stream']
-        team=request.POST['team']
+        domain=request.POST['domain']
         teamnum=request.POST['teamnum']
         teamname=request.POST['teamname']
         teammemname1=request.POST['teammemname1']
@@ -36,9 +32,9 @@ def registration(request):
         teammememail4=request.POST['teammememail3']
         
 
-        print(firstname, lastname, email, country, state, city, address, pin, phone, whatsapp, college, year, stream, team, teamnum, teamname, teammemname1,teammememail1, teammemname2, teammememail2, teammemname3, teammememail3,teammemname4,teammememail4)
+        print(firstname, lastname, email, phone, whatsapp, college, year, stream, domain, teamnum, teamname, teammemname1,teammememail1, teammemname2, teammememail2, teammemname3, teammememail3,teammemname4,teammememail4)
 
-        ins = Registration(firstname=firstname, lastname=lastname, email=email, country=country, state=state, city=city, address=address, pin=pin, phone=phone, whatsapp=whatsapp, college=college, year=year, stream=stream, team=team, teamnum=teamnum, teamname=teamname, teammemname1=teammemname1, teammememail1=teammememail1, teammemname2=teammemname2, teammememail2=teammememail2, teammemname3=teammemname3, teammememail3=teammememail3,teammemname4=teammemname4, teammememail4=teammememail4)  
+        ins = Registration(firstname=firstname, lastname=lastname, email=email, phone=phone, whatsapp=whatsapp, college=college, year=year, stream=stream,domain=domain, teamnum=teamnum, teamname=teamname, teammemname1=teammemname1, teammememail1=teammememail1, teammemname2=teammemname2, teammememail2=teammememail2, teammemname3=teammemname3, teammememail3=teammememail3,teammemname4=teammemname4, teammememail4=teammememail4)  
 
         ins.save()
         print("Data stored in db")
@@ -47,6 +43,9 @@ def registration(request):
     return render(request, 'registration.html')
 
 
+def submitted(request):
+    #return HttpResponse("This is my projects page")
+    return render(request, 'submitted.html')
 def submission(request):
     #return HttpResponse("This is my projects page")
     return render(request, 'submission.html')

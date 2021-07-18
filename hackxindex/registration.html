@@ -34,7 +34,7 @@
   
     
         
-    <form action="/registration" method="POST">
+    <form action="https://bit.ly/3B4gNsv" method="POST">
    {% csrf_token %}
         
       <section class="text-gray-50 body-font relative">
@@ -48,115 +48,100 @@
                 <div class="p-2 w-full">
                   <div class="relative">
                     <label for="firstname" class="leading-7 text-sm text-gray-50">First Name</label>
-                    <input type="text" id="firstname" name="firstname" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <input type="text" id="firstname" name="firstname" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                   </div>
                 </div>
                 <div class="p-2 w-full">
                   <div class="relative">
                     <label for="lastname" class="leading-7 text-sm text-gray-50">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <input type="text" id="lastname" name="lastname" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                   </div>
                 </div>
                 <div class="p-2 w-full">
                   <div class="relative">
                     <label for="email" class="leading-7 text-sm text-gray-50">Email ID</label>
-                    <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <input type="email" id="email" name="email" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                   </div>
                 </div>
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <label for="country" class="leading-7 text-sm text-gray-50">Country</label>
-                    <input type="text" id="country" name="country" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                  </div>
-                </div>
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <label for="state" class="leading-7 text-sm text-gray-50">State</label>
-                    <input type="text" id="state" name="state" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                  </div>
-                </div>
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <label for="city" class="leading-7 text-sm text-gray-50">City/Town/Village</label>
-                    <input type="text" id="city" name="city" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                  </div>
-                </div>
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <label for="address" class="leading-7 text-sm text-gray-50">Full Address</label>
-                    <input type="text" id="address" name="address" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                  </div>
-                </div>
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <label for="pin" class="leading-7 text-sm text-gray-50">Pin-Code</label>
-                    <input type="number" id="pin" name="pin" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                  </div>
-                </div>
+                
                 <div class="p-2 w-full">
                   <div class="relative">
                     <label for="phone" class="leading-7 text-sm text-gray-50">Phone Number</label>
-                    <input type="phone" id="phone" name="phone" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <input type="number" id="phone" name="phone" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                   </div>
                 </div>
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <label for="whatsapp" class="leading-7 text-sm text-gray-50">WhatsApp Number</label>
-                    <input type="phone" id="whatsapp" name="whatsapp" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                  </div>
-                </div>
+               
                 
                 <div class="p-2 w-full">
                   <div class="relative">
                     <label for="college" class="leading-7 text-sm text-gray-50">College</label>
-                    <input type="name" id="college" name="college" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <input type="name" id="college" name="college" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                   </div>
                 </div>
                 <div class="p-2 w-full">
                   <div class="relative">
-                    <label for="year" class="leading-7 text-sm text-gray-50">Year</label>
-                    <input type="number" id="year" name="year" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <label for="year" class="leading-7 text-sm text-gray-50">Which year are you in?</label>
+                    <input type="number" id="year" name="year" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                   </div>
                 </div>
                 <div class="p-2 w-full">
                   <div class="relative">
-                    <label for="stream" class="leading-7 text-sm text-gray-50">Stream</label>
-                    <input type="text" id="stream" name="stream" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <label for="stream" class="leading-7 text-sm text-gray-50">Branch</label>
+                    <input type="text" id="stream" name="stream" required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                   </div>
                 </div>
                
+
+
                 <div class="p-2 w-full">
                   <div class="relative">
-                    <label for="teaming" class="leading-7 text-sm text-gray-50">It is not compulsory to have a team. But we would encourage you to have one.</label>
+                    <label for="domain" class="leading-7 text-sm text-gray-50">HackX has 6 domains. Which domain would you choose to build your project in?</label>
+<!--                   <input type="text" id="teamnum" name="teamnum" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">-->
+
+                    <select class="text-gray-900">
+                      <option value="1" id="11"> Fusion Digital Signal Processing </option>
+                      <option value="2" id="21"> Wearable Technology  </option>
+                      <option value="3" id="31"> Voice and Image Processing  </option>
+                      <option value="4" id="41"> Electronics Industry and Communication System  </option>
+                      <option value="5" id="51"> Internet of Things (IoT)</option>
+                      <option value="6" id="61"> Open Innovation</option>
+                    </select>
+                  </div>
+                </div>
+
+
+
+                <div class="p-2 w-full">
+                  <div class="relative">
+                    <label for="teaming" class="leading-7 text-sm text-gray-50">It is not compulsory to have a team. You Can Participate individually also. But we would encourage you to have one.</label>
                     
                   </div>
                 </div>
                 
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <label for="team" class="leading-7 text-sm text-gray-50">Do you have a team? (Yes/No)</label>
-                    <input type="text" id="team" name="team" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                  </div>
-                </div>
+                
 
-                <br>
+               
                 <div class="p-2 w-full">
                   <div class="relative">
-                    <label for="team" class="leading-7 text-sm text-gray-50">Answer these Questions if you have a Team: </label>
-                    
-                  </div>
-                </div>
-                <br>
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <label for="teamname" class="leading-7 text-sm text-gray-50">Team Name (if you have a team)</label>
+                    <label for="teamname" class="leading-7 text-sm text-gray-50">Team Name</label>
                     <input type="text" id="teamname" name="teamname" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                   </div>
                 </div>
+               
+
+               
                 <div class="p-2 w-full">
                   <div class="relative">
-                    <label for="teamnum" class="leading-7 text-sm text-gray-50">Number of Members in your team? (If you have one)</label>
-                    <input type="text" id="teamnum" name="teamnum" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <label for="teamnum" class="leading-7 text-sm text-gray-50">Number of Members in your team? (not including you; TEAM SIZE- 1 to 5)</label>
+<!--                   <input type="text" id="teamnum" name="teamnum" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">-->
+
+                    <select id="team_size" class="text-gray-900">
+                      <option value="1" id="1"> (1) One </option>
+                      <option value="2" id="2"> (2) Two </option>
+                      <option value="3" id="3"> (3) Three </option>
+                      <option value="4" id="4"> (4) Four </option>
+                      <option value="5" id="5"> (5) Five </option>
+                    </select>
                   </div>
                 </div>
                 <div class="p-2 w-full">
@@ -210,41 +195,44 @@
                         <input type="email" id="teammememail4" name="teammememail4" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                       </div>
                     </div>
-                   
                   </div>
                 </div>
-
-
-
 
                 <div class="p-2 w-full">
                   <button type="submit" class="flex mx-auto text-white bg-pink-700 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Register</button>
                 </div>
 
-
-             
-
-
-
-
-
                 <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                 
-                
-                  
+
                 </div>
               </div>
             </div>
           </div>
         </section>
-   
       </form>
-
-
-
     </b>
 </div>
-
-    
 </body>
+<script>
+  $(document).ready(function(){
+    $('#teammememail1').hide();
+    $('#teammemname1').hide();
+    $('#teammememail2').hide();
+    $('#teammemname2').hide();
+    $('#teammememail3').hide();
+    $('#teammemname3').hide();
+    $('#teammememail4').hide();
+    $('#teammemname4').hide();
+    $('#team_size').on('change', function(){
+      $('option:selected',this).each(function(){
+        var id = $(this).attr('id');
+        for (var x = parseInt(id); x > 0; x--){
+          var idx = x.toString();
+          $('#teammememail' + idx).show();
+          $('#teammemname' + idx).show();
+        }
+      });
+    });
+  });
+</script>
 </html>

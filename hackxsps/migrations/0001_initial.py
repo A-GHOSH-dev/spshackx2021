@@ -18,17 +18,14 @@ class Migration(migrations.Migration):
                 ('firstname', models.CharField(max_length=50)),
                 ('lastname', models.CharField(max_length=50)),
                 ('email', models.EmailField(max_length=100)),
-                ('country', models.CharField(max_length=50)),
-                ('state', models.CharField(max_length=50)),
-                ('city', models.CharField(max_length=50)),
-                ('address', models.CharField(max_length=300)),
-                ('pin', models.CharField(max_length=30)),
+                
                 ('phone', models.CharField(max_length=10)),
-                ('whatsapp', models.CharField(max_length=10)),
+                
                 ('college', models.CharField(max_length=100)),
                 ('year', models.CharField(max_length=1)),
                 ('stream', models.CharField(max_length=60)),
-                ('team', models.CharField(max_length=3)),
+                ('domain', models.CharField(max_length=60)),
+                
                 ('teamnum', models.CharField(max_length=1)),
                 ('teamname', models.CharField(max_length=50)),
                 ('teammemname1', models.CharField(max_length=100)),
