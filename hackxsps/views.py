@@ -7,6 +7,7 @@ def index(request):
     return render(request, 'index.html')
 
 def registration(request):
+    regstudentdata = Registration.objects.all()
     if request.method=="POST":
         firstname=request.POST['firstname']
         lastname=request.POST['lastname']        
@@ -33,14 +34,14 @@ def registration(request):
         
 
 
-        studentdata = StudentReg(firstname=firstname, lastname=lastname, email=email, phone=phone, college=college, year=year, stream=stream,domain=domain, teamnum=teamnum, teamname=teamname, teammemname1=teammemname1, teammememail1=teammememail1, teammemname2=teammemname2, teammememail2=teammememail2, teammemname3=teammemname3, teammememail3=teammememail3,teammemname4=teammemname4, teammememail4=teammememail4)  
+        studentdata = Registration(firstname=firstname, lastname=lastname, email=email, phone=phone, college=college, year=year, stream=stream,domain=domain, teamnum=teamnum, teamname=teamname, teammemname1=teammemname1, teammememail1=teammememail1, teammemname2=teammemname2, teammememail2=teammememail2, teammemname3=teammemname3, teammememail3=teammememail3,teammemname4=teammemname4, teammememail4=teammememail4)  
 
         studentdata.save()
         res = "Dear {} Thanks for your registration".format(firstname)
-        return render(request,"registration.html",{"status":res,"Registered":studentdata})
+        return render(request,"registration.html",{"status":res,"Registered":regstudentdata})
         
         
-    return render(request,"foodsordernow.html",{"Registered":studentdata})
+    return render(request,"foodsordernow.html",{"Registered":regstudentdata})
 
 
 
@@ -78,6 +79,6 @@ def projects(request):
 
 
 def table(request):
-    studentdata = StudentReg.objects.all()
+    regstudentdata = Registration.objects.all()
     
-    return render(request,"table.html",{"studentdata":studentdata})
+    return render(request,"table.html",{"regstudentdata":regstudentdata})

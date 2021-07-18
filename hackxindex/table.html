@@ -22,7 +22,7 @@ tr:nth-child(even) {
 <body>
 
 <h2>HTML Table</h2>
-<h4 class="text-center"><em>Total: {{studentdata|length}}</em></h4>
+<h4 class="text-center"><em>Total: {{regstudentdata|length}}</em></h4>
 <table>
     <thead>
         <tr class="info">
@@ -47,7 +47,7 @@ tr:nth-child(even) {
         </tr>
       </thead>
       <tbody>
-        {% for data in studentdata %}
+        {% for data in regstudentdata %}
         <tr>
             <td>{{data.firstname}}</td>
             <td>{{data.lastname}}</td>
