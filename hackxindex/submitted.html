@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Submitted</title>
+</head>
+<body>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-12 mx-auto">
+          <div class="lg:w-2/2 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+            <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">YOU HAVE SUCCESSFULLY SUBMITTED !! Welcome to HackX</h1>
+           
+          </div>
+        </div>
+      </section>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-12 mx-auto">
+          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-100 overflow-hidden">
+                  {% load static %}
+                <img alt="content" class="object-cover object-center h-full w-full" src="{% static 'images/hola2.jpg' %}">
+              </div>
+              <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Join Our Discord</h2>
+              <p class="leading-relaxed text-base"></p>
+              <a href="https://discord.gg/W3Sv8RnR4X"><button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Discord</button></a>
+            </div>
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-100 overflow-hidden">
+                {% load static %}
+                <img alt="content" class="object-cover object-center h-full w-full" src="{% static 'images/hola.jpg' %}">
+              </div>
+              <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Join Our WhatsApp</h2>
+              <p class="leading-relaxed text-base"></p>
+              <a href="https://chat.whatsapp.com/FHoVpp7oTXQ4Pl5gdcjftV"><button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">WhatsApp</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

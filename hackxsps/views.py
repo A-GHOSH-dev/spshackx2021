@@ -1,10 +1,17 @@
+from django.http.response import HttpResponseRedirect
 from django.shortcuts import render, HttpResponse
 from hackxsps.models import Registration
+from django.urls import reverse
+
+
 
 # Create your views here.
 def index(request):
     #return HttpResponse("This is my home page")
     return render(request, 'index.html')
+def submitted(request):
+        #return HttpResponse("This is my contacts page")
+    return render(request, 'submitted.html')
 
 def registration(request):
     regstudentdata = Registration.objects.all()
@@ -38,10 +45,12 @@ def registration(request):
 
         studentdata.save()
         res = "Dear {} Thanks for your registration".format(firstname)
-        return render(request,"registration.html",{"status":res,"Registered":regstudentdata})
+        #return render(request,"registration.html",{"status":res,"Registered":regstudentdata})
+        return HttpResponseRedirect(reverse('submitted.html'))
         
-        
-    return render(request,"registration.html",{"Registered":regstudentdata})
+    else:
+        #return HttpResponse(request,"registration.html",{"Registered":regstudentdata})
+        return HttpResponse('Invalid Response')
 
 
 
@@ -71,6 +80,10 @@ def checkin(request):
 def projects(request):
         #return HttpResponse("This is my contacts page")
     return render(request, 'projects.html')
+
+def submitted(request):
+        #return HttpResponse("This is my contacts page")
+    return render(request, 'submitted.html')
 
 
 
