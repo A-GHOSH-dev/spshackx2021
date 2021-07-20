@@ -20,7 +20,7 @@ def registration(request):
         college=request.POST['college']
         year=request.POST['year']
         stream=request.POST['stream']
-        domain=request.POST['domain']
+        track=request.POST['track']
         teamnum=request.POST['teamnum']
         teamname=request.POST['teamname']
         teammemname1=request.POST['teammemname1']
@@ -34,7 +34,7 @@ def registration(request):
         
 
 
-        studentdata = Registration(firstname=firstname, lastname=lastname, email=email, phone=phone, college=college, year=year, stream=stream,domain=domain, teamnum=teamnum, teamname=teamname, teammemname1=teammemname1, teammememail1=teammememail1, teammemname2=teammemname2, teammememail2=teammememail2, teammemname3=teammemname3, teammememail3=teammememail3,teammemname4=teammemname4, teammememail4=teammememail4)  
+        studentdata = Registration(firstname=firstname, lastname=lastname, email=email, phone=phone, college=college, year=year, stream=stream,track=track, teamnum=teamnum, teamname=teamname, teammemname1=teammemname1, teammememail1=teammememail1, teammemname2=teammemname2, teammememail2=teammememail2, teammemname3=teammemname3, teammememail3=teammememail3,teammemname4=teammemname4, teammememail4=teammememail4)  
 
         studentdata.save()
         res = "Dear {} Thanks for your registration".format(firstname)
